@@ -1,0 +1,308 @@
+.navbar {
+    background-color: #5cc9fc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 2px 10px rgb(80, 80, 80);
+    border-radius: 7px;
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+}
+.navbar li {
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.navbar a:hover {
+    font-size: 17px;
+    font-weight: bold;
+    color: crimson;
+}
+.navbar .active {
+    color: red;
+}
+.bg-main{
+    background-color: rgb(253, 248, 240);
+}
+.bg-white{
+    background-color: white;
+}
+.header {
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.news-it {
+    border: 1px solid #00abfa;
+    background-color: #a4dbf5;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 15px;
+}
+.news-detail {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 15px;
+}
+.virus-img1 {
+    display: flex;
+    justify-content: center;
+}
+.virus-img1 img {
+    width: 90%;
+    padding: 10px;
+}
+.virus-img2 {
+    display: flex;
+    justify-content: center;
+}
+.virus-img2 img {
+    width: 90%;
+    height: 29vh;
+    padding: 10px;
+}
+.bg-text {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px black;
+    animation: bgcolor 3s infinite;
+}
+.text-header {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text {
+    padding: 15px;
+}
+.mt-1 {
+    margin-top: 1%;
+}
+.mt-2 {
+    margin-top: 2%;
+}
+.mt-3 {
+    margin-top: 3%;
+}
+.mt-4 {
+    margin-top: 4%;
+}
+.mt-5 {
+    margin-top: 5%;
+}
+.mt-6 {
+    margin-top: 6%;
+}
+.mt-7 {
+    margin-top: 7%;
+}
+.mt-8 {
+    margin-top: 8%;
+}
+.mt-9 {
+    margin-top: 9%;
+}
+.mt-10 {
+    margin-top: 10%;
+}
+.bg-header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+.animation-scroll{
+    display: none;
+    animation: scroll 0.7s linear;
+}
+.header .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 7fr 2fr 3fr;
+}
+.itsupport {
+    margin: 15px;
+}
+.it-img{
+    display: flex;
+    justify-content: center;
+}
+.it-img img {
+    padding: 20px;
+    width: 70%;
+}
+.detail-it {
+    border-radius: 7px;
+    background-color: #a4dbf5;
+    margin-right: auto;
+    padding: 10px;
+}
+.detail-it .text-header {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+.programmer {
+    margin: 15px;
+}
+.programmer-img{
+    display: flex;
+    justify-content: center;
+}
+
+.programmer-img img {
+    padding: 20px;
+    width: 70%;
+}
+.detail-programmer {
+    border-radius: 7px;
+    background-color: #a4dbf5;
+    margin-right: auto;
+    padding: 10px;
+}
+.detail-programmer .text-header {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+.erp {
+    margin: 15px;
+}
+.erp-img{
+    display: flex;
+    justify-content: center;
+}
+.erp-img img {
+    padding: 20px;
+    width: 70%;
+}
+.detail-erp {
+    border-radius: 7px;
+    background-color: #a4dbf5;
+    margin-right: auto;
+    padding: 10px;
+}
+.detail-erp .text-header {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+.animation-click{
+    animation: click 0.5s infinite;
+}
+.chart-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 5px 5px 10px rgb(131, 130, 130);
+    border-radius: 10px;
+    padding: 20px;
+}
+.barchart{
+    margin-top: 7%;
+    margin-left: 10%;
+    width: 100%;
+}
+.barchart canvas{
+    padding: 10px;
+    max-width: 600px;
+    border-radius: 7px;
+    background-color: white;
+}
+.piechart{
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 60%;
+    border-radius: 7px;
+}
+.piechart canvas{
+    padding: 10px;
+    max-width: 300px;
+    background-color: white;
+}
+.showdata{
+    animation-name: showindex;
+    animation-duration: 1s;
+}
+@keyframes bgcolor {
+    0% {
+        box-shadow: 0px 0px 7px red;
+    }
+    25% {
+        box-shadow: 0px 0px 7px rgb(0, 255, 200);
+    }
+    50% {
+        box-shadow: 0px 0px 7px rgb(102, 255, 0);
+    }
+    100% {
+        box-shadow: 0px 0px 7px rgb(255, 0, 0);
+    }
+}
+@keyframes click {
+    0% {
+        color: red;
+    }
+    10% {
+        color: rgb(255, 174, 0);
+    }
+    20% {
+        color: rgb(229, 255, 0);
+    }
+    30% {
+        color: rgb(9, 255, 0);
+    }
+    40% {
+        color: rgb(0, 255, 213);
+    }
+    50% {
+        color: rgb(0, 110, 255);
+    }
+    60% {
+        color: rgb(111, 0, 255);
+    }
+    70% {
+        color: rgb(255, 0, 255);
+    }
+    80% {
+        color: rgb(255, 0, 76);
+    }
+    90% {
+        color: rgb(255, 0, 119);
+    }
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+@keyframes scroll {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+}
+@keyframes showindex {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

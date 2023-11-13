@@ -1,0 +1,262 @@
+.mg-1 {
+    margin: 1rem;
+}
+.mg-2 {
+    margin: 2rem;
+}
+.mg-3 {
+    margin: 3rem;
+}
+.mg-4 {
+    margin: 4rem;
+}
+.mg-5 {
+    margin: 5rem;
+}
+.mg-6 {
+    margin: 6rem;
+}
+.mg-7 {
+    margin: 7rem;
+}
+.mg-8 {
+    margin: 8rem;
+}
+.mg-9 {
+    margin: 9rem;
+}
+.mg-10 {
+    margin: 10rem;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.modal-category {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: modelEdit 0.3s linear;
+}
+.modalcategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 15%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    padding: 10px;
+}
+.modalcategory input {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+}
+.modalcategory select {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+    width: 70%;
+}
+.modalcategory select:focus {
+    outline: none;
+}
+.modalcategory input:focus {
+    outline: none;
+}
+.modal-equip {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: modelEdit 0.3s linear;
+}
+.modalequipment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 15%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    padding: 10px;
+}
+.modalequipment input {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+}
+.modalequipment select {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+    width: 70%;
+}
+.modalequipment select:focus {
+    outline: none;
+}
+.modalequipment input:focus {
+    outline: none;
+}
+.modal-brand {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: modelEdit 0.3s linear;
+}
+.modalbrand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 15%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    padding: 10px;
+}
+.modalbrand input {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+}
+.modalbrand select {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+    width: 70%;
+}
+.modalbrand select:focus {
+    outline: none;
+}
+.modalbrand input:focus {
+    outline: none;
+}
+.btn-submit {
+    padding: 5px;
+    width: 20%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 2px solid green;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn-close {
+    padding: 5px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 2px solid rgb(128, 0, 0);
+    cursor: pointer;
+}
+.btn-close:hover {
+    background-color: darkred;
+    color: white;
+}
+.table-brand {
+    display: inline;
+    overflow-y: auto;
+    border-radius: 7px;
+    background-color: white;
+    width: 83%;
+    max-height: 550px;
+}
+.tablebrand {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.tablebrand tr td {
+    border: 1px solid rgb(0, 0, 0);
+}
+.btn-edit {
+    padding: 7px;
+    border-radius: 7px;
+    border: 2px solid darkgoldenrod;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-edit:hover {
+    background-color: rgb(212, 153, 2);
+    color: white;
+}
+.btn-delete {
+    padding: 7px;
+    border-radius: 7px;
+    border: 2px solid darkred;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-delete:hover {
+    background-color: rgb(129, 41, 41);
+    color: white;
+}
+.inputselect{
+    caret-color: transparent;
+    cursor: pointer;
+}
+.option-ul{
+    display: none;
+    position: absolute;
+    overflow-y: auto;
+    height: 10%;
+    width: 13%;
+    margin-left: 5%;
+}
+.option-ul li{
+    background-color: white;
+    padding: 5px;
+}
+.option-ul li:hover{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+@keyframes modelEdit {
+    0% {
+        top: -100%;
+    }
+    20% {
+        top: 50%;
+    }
+    40% {
+        top: -30%;
+    }
+    60% {
+        top: 10%;
+    }
+    80% {
+        top: -5%;
+    }
+    100%{
+        top: 0%;
+    }
+    
+}

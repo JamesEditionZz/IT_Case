@@ -1,0 +1,145 @@
+.font-report{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    height: 80vh;
+    border-radius: 7px;
+    background-color: white;
+    animation-name: showindex;
+    animation-duration: 2s;
+}
+.font-report .listreport{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.font-report .btn-report{
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+}
+.font-report .btn-report button{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 7px;
+    background-color: white;
+}
+.font-report .btn-report button:hover{
+    background-color: red;
+    color: white;
+}
+.ITheader{
+    display: flex;
+    justify-content: center;
+}
+.Code-ID{
+    display: none;
+    width: 30%;
+}
+.Code-ID input{
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.Code-ID input:focus{
+    outline: none;
+}
+.selectreport1{
+    display: none;
+    position: fixed;
+    background-color: rgb(252, 230, 230);
+    width: 6%;
+    border-radius: 7px;
+}
+.selectreport1 li{
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.selectreport1 li:hover{
+    background-color: brown;
+    color: white;
+}
+.report-date{
+    display: none;
+}
+.report-date input{
+    border: 2px solid red;
+    border-radius: 7px;
+    padding: 7px;
+    width: 35%;
+    margin-left: 3px;
+}
+.report-category{
+    display: none;
+}
+.report-category input{
+    padding: 7px;
+    width: 35%;
+    border: 2px solid red;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+.report-category input:focus{
+    outline: none;
+}
+.ulcategory{
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 230, 230);
+    width: 7%;
+    border-radius: 7px;
+    border: 1px solid red;
+}
+.ulcategory li{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.ulcategory li:hover{
+    background-color: brown;
+    border-radius: 7px;
+}
+.ulequipment{
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 230, 230);
+    width: 7%;
+    border-radius: 7px;
+    margin-left: 7.2%;
+    border: 1px solid red;
+}
+.ulequipment li{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.ulequipment li:hover{
+    background-color: brown;
+    border-radius: 7px;
+}
+.alert-warning{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 40, 40);
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 7px;
+
+}
+
+@keyframes showindex{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

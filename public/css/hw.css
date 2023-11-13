@@ -1,0 +1,528 @@
+.main {
+    padding: 30px;
+}
+.main-header {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+label[for="text"] {
+    color: white;
+    font-size: 18px;
+}
+label[for="insert"] {
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 50px;
+}
+label[for="insert"]:hover {
+    color: rgb(236, 45, 45);
+}
+.col-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.card-input {
+    padding: 5px;
+}
+select {
+    border: 2px solid rgb(236, 45, 45);
+    border-radius: 10px;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+}
+table tr th {
+    color: white;
+}
+.btn-insert {
+    width: 70%;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: initial;
+    border-radius: 10px;
+    border: 2px solid rgb(236, 45, 45);
+    outline: none;
+    cursor: pointer;
+}
+.btn-insert:hover {
+    background-color: rgb(236, 45, 45);
+    transition: 0.4s;
+}
+.btn-success{
+    background-color: initial;
+    border-radius: 15px;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.btn-success:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.btn-close{
+    background-color: initial;
+    border-radius: 15px;
+    border: 2px solid rgb(233, 203, 70);
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.btn-close:hover{
+    background-color: rgb(233, 203, 70);
+    color: black;
+}
+.datalist{
+    color: white;
+}
+.myedit{
+    display: none;
+}
+/* catgory */
+.select-box{
+    width: 70%;
+}
+.select-option{
+    position: relative;
+}
+.select-option input{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 9px;
+    cursor: pointer;
+}
+.select-option input:hover{
+    box-shadow: 0px 0px 10px red;
+}
+.select-option input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px red;
+}
+.select-option:after{
+    content: "";
+    border-top: 8px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    margin-left: 100%;
+    margin-top: -10%;
+    cursor: pointer;
+}
+.content{
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 10.5%;
+}
+.search input{
+    width: 85%;
+    border-radius: 7px;
+    border: 2px solid red;
+    font-size: 16px;
+    padding: 5px;
+}
+.search input:focus{
+    outline: none;
+}
+.option{
+    margin: 1px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0;
+}
+.option li{
+    font-size: 16px;
+    padding: 9px;
+    width: 80%;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.option li:hover{
+    background-color: brown;
+    color: white;
+}
+.select-option.active .content{
+    display: block;
+}
+
+/* equipment */
+.select-equip{
+    width: 70%;
+}
+.option-equip{
+    position: relative;
+}
+.option-equip input{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 9px;
+    cursor: pointer;
+}
+.option-equip input:hover{
+    box-shadow: 0px 0px 10px red;
+}
+.option-equip input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px red;
+}
+.option-equip:after{
+    content: "";
+    border-top: 8px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    margin-left: 100%;
+    margin-top: -10%;
+    cursor: pointer;
+}
+.search-equip input{
+    width: 84%;
+    border: 2px solid red;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.search-equip input:focus{
+    outline: none;
+}
+.contentequip{
+    display: none;
+    margin-top: 5px;
+    width: 10.5%;
+    position: absolute;
+    background-color: white;
+    border-radius: 7px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0;
+}
+.contentequip li{
+    font-size: 16px;
+    padding: 9px;
+    width: 80%;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.contentequip li:hover{
+    background-color: brown;
+    color: white;
+}
+/* order */
+.select-order{
+    width: 80%;
+}
+.select-order select{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* department */
+.input-depart input{
+    width: 70%;
+    border: 2px solid red;
+    border-radius: 7px;
+    padding: 9px;
+    font-size: 16px;
+
+}
+.input-depart input:hover{
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+.input-depart input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+
+/* section */
+.input-section input{
+    width: 70%;
+    border: 2px solid red;
+    border-radius: 7px;
+    padding: 9px;
+    font-size: 16px;
+
+}
+.input-section input:hover{
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+.input-section input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+
+
+.w-5{
+    width: 50px;
+}
+p{
+    display: none;
+}
+span{
+    display: none;
+}
+a .relative{
+    color: white;
+}
+.flex{
+    text-align: right;
+}
+.relative{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.relative:hover{
+    color:rgb(236, 45, 45);
+}
+.input-other{
+    width: 80%;
+}
+.informer-input input{
+    width: 70%;
+    border: 2px solid red;
+    border-radius: 7px;
+    padding: 9px;
+    font-size: 16px;
+
+}
+.informer-input input:hover{
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+.informer-input input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+.input-other input{
+    width: 85%;
+    border: 2px solid red;
+    border-radius: 7px;
+    padding: 9px;
+    font-size: 16px;
+
+}
+.input-other input:hover{
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+.input-other input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(255, 1, 1);
+}
+
+/* brand */
+.select-brand{
+    width: 70%;
+}
+.option-brand{
+    position: relative;
+}
+.option-brand input{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 9px;
+    cursor: pointer;
+}
+.option-brand input:hover{
+    box-shadow: 0px 0px 10px red;
+}
+.option-brand input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px red;
+}
+.option-brand:after{
+    content: "";
+    border-top: 8px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    margin-left: 100%;
+    margin-top: -10%;
+    cursor: pointer;
+}
+.search-brand input{
+    width: 88%;
+    border: 2px solid red;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.search-brand input:focus{
+    outline: none;
+}
+.contentbrand{
+    display: none;
+    margin-top: 5px;
+    width: 10.5%;
+    position: absolute;
+    background-color: white;
+    border-radius: 7px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0;
+}
+.contentbrand li{
+    font-size: 16px;
+    padding: 9px;
+    width: 80%;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.contentbrand li:hover{
+    background-color: brown;
+    color: white;
+}
+.select-order{
+    width: 70%;
+}
+.select-order input{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 9px;
+    cursor: pointer;
+}
+.select-order input:hover{
+    box-shadow: 0px 0px 10px red;
+}
+.select-order input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px red;
+}
+.contentorder{
+    display: none;
+    margin-top: 5px;
+    width: 10.5%;
+    position: absolute;
+    background-color: white;
+    border-radius: 7px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0;
+}
+.contentorder li{
+    font-size: 16px;
+    padding: 9px;
+    width: 80%;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.contentorder li:hover{
+    background-color: brown;
+    color: white;
+}
+.img-exchange{
+    width: 85%;
+    background-color: rgb(101, 204, 80);
+    border-radius: 10px;
+    border: 2px solid rgb(8, 112, 8);
+    cursor: pointer;
+}
+.img-exchange:hover{
+    background-color: coral;
+    border: 2px solid rgb(160, 81, 8);
+}
+
+.img-trash{
+    width: 85%;
+    background-color: rgb(233, 45, 45);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 0, 0);
+    cursor: pointer;
+}
+.img-trash:hover{
+    background-color: coral;
+    border: 2px solid rgb(160, 81, 8);
+}
+.from-tranfer{
+    display: none;
+    animation-name: form-tranfer;
+    animation-duration: 2s;
+}
+.tranfer{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+    
+}
+.tranfer label{
+    color: white;
+    font-size: 18px;
+}
+.tranfer input{
+    border: 2px solid rgb(221, 56, 56);
+    border-radius: 7px;
+    padding: 5px;
+}
+.tranfer input:hover{
+    box-shadow: 0px 0px 10px red;
+}
+.tranfer input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px red;
+}
+.tranfer img{
+    width: 90%;
+}
+@keyframes form-tranfer {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.btn-warning{
+    background-color: white;
+    border: 2px solid rgb(255, 153, 0);
+    border-radius: 7px;
+    padding: 15px;
+    margin-left: 20%;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-warning:hover{
+    background-color: rgb(243, 187, 102);
+}
+.img-pen{
+    background-color: darkgoldenrod;
+    border: 2px solid yellow;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.img-pen:hover{
+    border: 2px solid coral;
+    background-color: rgb(160, 81, 8);
+}
+.editinput{
+    display: none;
+}
+.btn-editrecord{
+    border: 2px solid yellow;
+    background-color: initial;
+    color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-left: 2%;
+    margin-right: auto;
+    padding: 7%;
+    width: 69%;
+    cursor: pointer;
+}
+.btn-editrecord:hover{
+    background-color: darkgoldenrod;
+}

@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(110, 110, 110);
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.form-label {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+.form-control {
+    border: 2px solid rgb(128, 40, 128);
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-control:hover {
+    box-shadow: 2px 2px 5px purple;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: 2px 2px 5px purple;
+}
+.jus-right {
+    display: flex;
+    justify-content: right;
+}
+.btn-success {
+    padding: 15px;
+    width: 8%;
+    border: 2px solid green;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn-success:hover {
+    background-color: green;
+    color: white;
+}
+
+.container table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+td .status1 {
+    display: flex;
+    border: 2px solid red;
+    background-color: rgba(253, 0, 0, 0.7);
+    padding: 5px;
+    width: 90%;
+    border-radius: 7px;
+    color: white;
+    justify-content: center;
+    animation: status0 1s linear infinite;
+}
+td .status2 {
+    display: flex;
+    border: 2px solid rgb(255, 255, 0);
+    background-color: rgba(255, 255, 0, 0.7);
+    padding: 5px;
+    width: 90%;
+    border-radius: 7px;
+    justify-content: center;
+    animation: status1 1s linear infinite;
+}
+td .status3 {
+    display: flex;
+    border: 2px solid rgb(0, 200, 0);
+    background-color: rgba(0, 200, 0, 0.7);
+    padding: 5px;
+    width: 90%;
+    border-radius: 7px;
+    color: white;
+    justify-content: center;
+    animation: status2 1s linear infinite;
+}
+.container table tr:nth-child(odd) {
+    background-color: rgb(197, 197, 197);
+}
+.container table tr:nth-child(even) {
+    background-color: #e4e2e2;
+}
+.animation-display{
+    animation: display 1s;
+}
+@keyframes display {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes status0 {
+    0% {
+        background-color: rgba(253, 0, 0, 0.7);
+    }
+    50% {
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+    100% {
+        background-color: rgba(253, 0, 0, 0.7);
+    }
+}
+@keyframes status1 {
+    0% {
+        background-color: rgba(255, 255, 0, 0.2);
+    }
+    50% {
+        background-color: rgba(255, 255, 0, 0.7);
+    }
+    100% {
+        background-color: rgba(255, 255, 0, 0.2);
+    }
+}
+@keyframes status2 {
+    0% {
+        background-color: rgba(0, 200, 0, 0.7);
+    }
+    50% {
+        background-color: rgba(0, 200, 0, 0.2);
+    }
+    100% {
+        background-color: rgba(0, 200, 0, 0.7);
+    }
+}
